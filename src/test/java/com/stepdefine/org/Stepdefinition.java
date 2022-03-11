@@ -28,13 +28,6 @@ public class Stepdefinition extends Base {
 
 	@Given("User enter valid credentails")
 	public void user_enter_valid_credentails(io.cucumber.datatable.DataTable dataTable) {
-		// Write code here that turns the phrase above into concrete actions
-		// For automatic transformation, change DataTable to one of
-		// E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-		// Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-		// Double, Byte, Short, Long, BigInteger or BigDecimal.
-		//
-		// For other transformations you can register a DataTableType.
 		List<Map<String, String>> asMaps = dataTable.asMaps(String.class, String.class);
 		String string = asMaps.get(0).get("username");
 		String string2 = asMaps.get(0).get("password");
